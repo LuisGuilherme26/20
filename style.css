@@ -289,6 +289,7 @@
 .vava .vava-body{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     margin-top: 30px;
     margin-bottom: 30px;
     height: 700px;
@@ -313,9 +314,8 @@
 }
 .vava .vava-body .vava-box{
     display: flex;
-    flex-direction: column;
-    height: 100%;
-    width: 60%;
+    flex-direction: row;
+    width: 100%;
 }
 .vava .vava-body .vava-text{
     padding: 30px;
@@ -324,6 +324,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    width: 50%;
     height: 40%;
     font-weight: bold;
 }
@@ -332,12 +333,19 @@
 }
 .vava .vava-body .vava-video{
     flex-basis: 1;
-    padding: 30px;
-    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
 }
-.vava .vava-body .vava-video video{
+.vava .vava-video a{
     border-radius: 10px;
-    width: 95%;
+    width: 70%;
+    background-color: #2667FF;
+    color: #fff;
+    text-decoration: none;
+    padding: 20px;
+    text-align: center;
 }
 .vava .vava-us{
     display: flex;
